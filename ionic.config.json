@@ -1,0 +1,7 @@
+{
+  "name": "IgualdApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
