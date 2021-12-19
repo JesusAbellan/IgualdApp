@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { computeStackId } from '@ionic/angular/directives/navigation/stack-utils';
@@ -13,8 +13,12 @@ import { ItemsService } from '../../services/items.service';
 export class CabeceraComponent implements OnInit {
 
   @ViewChild('miMenu') miMenu:MenuController;
-  constructor(private _itemsService: ItemsService, public router:Router) { }
+  @Input() titulo:string;
+  
   items:Item[] = [];
+
+  constructor(private _itemsService: ItemsService, public router:Router) { }
+  
   async ngOnInit() {
     try{
       this.items = await this._itemsService.getItems();
@@ -23,6 +27,7 @@ export class CabeceraComponent implements OnInit {
       console.log(error);
        }
   }
+  
   abrirMenu(){
     this.miMenu.open();
   }
