@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Input } from 'src/app/interfaces/input';
-import { InputService } from 'src/app/services/input.service';
 
 @Component({
   selector: 'app-login',
@@ -8,15 +6,10 @@ import { InputService } from 'src/app/services/input.service';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  inputs: Input[] = [];
 
-  constructor(private _inputService: InputService) { }
+  constructor() { }
   async ngOnInit() {
-    try {
-      this.inputs = (await this._inputService.getInputs("login"));
-    } catch (error) {
-      console.log(error);
-    }
+  
   }
 
 }
