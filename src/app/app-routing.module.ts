@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'info',
     loadChildren: () => import('./pages/info/info.module').then( m => m.InfoPageModule)
+  },  {
+    path: 'bullying',
+    loadChildren: () => import('./pages/bullying/bullying.module').then( m => m.BullyingPageModule)
   },
+
 
 ];
 

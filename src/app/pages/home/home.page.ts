@@ -16,7 +16,7 @@ export class HomePage implements OnInit{
   async ngOnInit() {
     try {
       this.cards = (await this._cardsService.getCards());
-    } catch (error) {
+      } catch (error) {
       console.log(error);
     }
   }
