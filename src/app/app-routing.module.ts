@@ -9,18 +9,32 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'info',
-    loadChildren: () => import('./pages/info/info.module').then(m => m.InfoPageModule)
+    loadChildren: () => import('./pages/info/info.module').then( m => m.InfoPageModule)
+  },
+  {
+    path: 'identidad-genero',
+    loadChildren: () => import('./pages/identidad-genero/identidad-genero.module').then( m => m.IdentidadGeneroPageModule)
+  },
+  {
+    path: 'violencia-genero',
+    loadChildren: () => import('./pages/violencia-genero/violencia-genero.module').then( m => m.ViolenciaGeneroPageModule)
+  },
+  {
+    path: 'bullying',
+    loadChildren: () => import('./pages/bullying/bullying.module').then( m => m.BullyingPageModule)
+  },
+  {
+    path: 'cyberbullying',
+    loadChildren: () => import('./pages/cyberbullying/cyberbullying.module').then( m => m.CyberbullyingPageModule)
   },
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule)
   },
-
-
 ];
 
 @NgModule({
