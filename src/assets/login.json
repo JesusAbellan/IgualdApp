@@ -1,8 +1,8 @@
 [{
     "type":"email",
-    "placeholder" :"Correo"
+    "placeholder":"Correo"
 },
 {
     "type":"password",
-    "placeholder" :"Contraseña"
+    "placeholder":"Contraseña"
 }]

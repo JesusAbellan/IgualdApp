@@ -13,7 +13,7 @@ export class LoginPage implements OnInit {
   constructor(private _inputService: InputService) { }
   async ngOnInit() {
     try {
-      this.inputs = (await this._inputService.getInputs());
+      this.inputs = (await this._inputService.getInputs("login"));
     } catch (error) {
       console.log(error);
     }

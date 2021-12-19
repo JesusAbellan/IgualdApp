@@ -9,9 +9,9 @@ export class InputService {
 
   constructor(private _http:HttpClient) { }
 
-  getInputs() {
+  getInputs(input:String) {
     return new Promise<Input[]>((resolve, reject) => {
-      const url = '../../assets/login.json';
+      const url = `../../assets/${input}.json`;
       this._http.get<Input[]>(url).subscribe(inputs=>{
         resolve(inputs);
       }, err=>{
