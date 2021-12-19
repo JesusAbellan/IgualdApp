@@ -36,10 +36,12 @@ ion-content {
             font-size: 18px;
             text-transform: initial;
         }
-        p {
+        div {
             text-align: center;
-            font-size: 15px;
-            color: #7b7b7b;
+            a {
+                font-size: 15px;
+                color: #7b7b7b;
+            }
         }
     }
 }
