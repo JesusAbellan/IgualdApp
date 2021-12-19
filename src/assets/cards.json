@@ -1,0 +1,36 @@
+[{
+    "titulo": "Identidad de género",
+    "texto": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
+    "ruta": "/identidad-de-genero",
+    "imagenes": [],
+    "enlaces": [],
+    "videos": []
+},
+{
+    "titulo": "Violencia de género",
+    "texto": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
+    "ruta": "/violencia-de-genero",
+    "imagenes": [],
+    "enlaces": [],
+    "videos": [],
+    "tests": []
+},
+{
+    "titulo": "Bullying",
+    "texto": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
+    "ruta": "/bullying",
+    "imagenes": [],
+    "enlaces": [],
+    "videos": [],
+    "tests": []
+},
+{
+    "titulo": "Cyberbullying",
+    "texto": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
+    "ruta": "/cyberbullying",
+    "imagenes": [],
+    "enlaces": [],
+    "videos": [],
+    "tests": []
+}
+]
