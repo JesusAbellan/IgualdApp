@@ -5,7 +5,8 @@
 {
     "nombre":"Información",
     "ruta":"info"
-},{
+},
+{
     "nombre":"Créditos",
     "ruta":"creditos"
 }]

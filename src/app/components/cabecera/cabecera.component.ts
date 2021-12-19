@@ -14,7 +14,6 @@ export class CabeceraComponent implements OnInit {
 
   @ViewChild('miMenu') miMenu:MenuController;
   @Input() titulo:string;
-  
   items:Item[] = [];
 
   constructor(private _itemsService: ItemsService, public router:Router) { }
