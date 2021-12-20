@@ -1,12 +1,12 @@
 <ion-header class="ion-no-border">
   <ion-toolbar color="primary">
     <ion-buttons *ngIf="router.url!='/home'" slot="start">
-      <ion-back-button defaultHref="home" [mode] ="'md'"></ion-back-button>
+      <ion-back-button defaultHref="home" [mode] ="'md'" style="z-index: 1;"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button (click)="abrirMenu()" [mode] ="'md'"><ion-icon slot="start" name="menu"></ion-icon></ion-button>
+      <ion-button (click)="abrirMenu()"  style="z-index: 1; "[mode] ="'md'"><ion-icon slot="start" name="menu"></ion-icon></ion-button>
     </ion-buttons>
-    <ion-title>{{titulo}}</ion-title>
+    <ion-title>IgualdApp</ion-title>
   </ion-toolbar>
 </ion-header>
    <ion-menu-toggle auto-hide="true">
@@ -19,7 +19,7 @@
         
         <ion-content>
           <ion-list>
-            <ion-item *ngFor="let item of items" [routerLink]="item.ruta">
+            <ion-item *ngFor="let item of items" [routerLink]="'/' + item.ruta">
               <ion-label>{{item.nombre}}</ion-label>
             </ion-item>
           </ion-list>

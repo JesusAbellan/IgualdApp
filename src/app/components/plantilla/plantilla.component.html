@@ -1,0 +1,48 @@
+<ion-toolbar>
+  <ion-title>{{card?.titulo}}</ion-title>
+</ion-toolbar>
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12">
+      <ion-list>
+        <ion-item  *ngFor="let text of card?.texto">
+          <span>{{text}}</span>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+    <ion-col size="12">
+      <ion-slides  mode="ios" pager="ios" scrollbar="ios">
+        <ion-slide  *ngFor="let imagen of card?.imagenes">
+          <ion-img [src]="imagen"></ion-img>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+      <ion-col size="12">
+        <ion-list>
+          <ion-list-header>
+            <ion-label>Enlaces de Interés</ion-label>
+          </ion-list-header>
+          <ion-item *ngFor="let enlace of card?.enlaces">
+            <ion-label>{{enlace}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="12">
+        <ion-list>
+          <ion-list-header>
+            <ion-label>Vídeos de Interés</ion-label>
+          </ion-list-header>
+          <ion-item *ngFor="let video of card?.videos">
+            <ion-label>{{video}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="12">
+        <ion-list *ngIf="(card?.tests != null)">
+          <ion-list-header>
+            <ion-label>Test de {{card?.titulo}}</ion-label>
+          </ion-list-header>
+        </ion-list>
+      </ion-col>
+  </ion-row>
+</ion-grid>

@@ -3,18 +3,23 @@ import { CommonModule } from '@angular/common';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
+import { PlantillaComponent } from './plantilla/plantilla.component';
 
 
 
 @NgModule({
-  declarations: [CabeceraComponent],
+  declarations: [
+    CabeceraComponent,
+     PlantillaComponent
+    ],
   imports: [
     CommonModule,
     IonicModule,
     RouterModule
   ],
   exports: [
-    CabeceraComponent
+    CabeceraComponent,
+    PlantillaComponent
   ]
 })
 export class ComponentsModule { }
