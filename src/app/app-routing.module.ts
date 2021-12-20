@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'contrasena-olvidada',
     loadChildren: () => import('./pages/contrasena-olvidada/contrasena-olvidada.module').then( m => m.ContrasenaOlvidadaPageModule)
   },
+  {
+    path: 'creditos',
+    loadChildren: () => import('./pages/creditos/creditos.module').then( m => m.CreditosPageModule)
+  },
 
 
 
