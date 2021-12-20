@@ -18,6 +18,38 @@ const routes: Routes = [
     path: 'bullying',
     loadChildren: () => import('./pages/bullying/bullying.module').then( m => m.BullyingPageModule)
   },
+<<<<<<< HEAD
+=======
+  {
+    path: 'home/login',
+    redirectTo: 'login'
+  },
+  {
+    path: 'info',
+    loadChildren: () => import('./pages/info/info.module').then( m => m.InfoPageModule)
+  },
+  {
+    path: 'identidad-genero',
+    loadChildren: () => import('./pages/identidad-genero/identidad-genero.module').then( m => m.IdentidadGeneroPageModule)
+  },
+  {
+    path: 'violencia-genero',
+    loadChildren: () => import('./pages/violencia-genero/violencia-genero.module').then( m => m.ViolenciaGeneroPageModule)
+  },
+  {
+    path: 'bullying',
+    loadChildren: () => import('./pages/bullying/bullying.module').then( m => m.BullyingPageModule)
+  },
+  {
+    path: 'cyberbullying',
+    loadChildren: () => import('./pages/cyberbullying/cyberbullying.module').then( m => m.CyberbullyingPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule)
+  },
+];
+>>>>>>> a88e369262952c5151ff9ce55956a2bb1f70599c
 
 
 ];

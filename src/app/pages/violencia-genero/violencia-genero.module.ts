@@ -5,18 +5,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BullyingPageRoutingModule } from './bullying-routing.module';
+import { ViolenciaGeneroPageRoutingModule } from './violencia-genero-routing.module';
 
-import { BullyingPage } from './bullying.page';
+import { ViolenciaGeneroPage } from './violencia-genero.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BullyingPageRoutingModule,
+    ViolenciaGeneroPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [BullyingPage]
+  declarations: [ViolenciaGeneroPage]
 })
-export class BullyingPageModule {}
+export class ViolenciaGeneroPageModule {}

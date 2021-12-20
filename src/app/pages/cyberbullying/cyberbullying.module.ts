@@ -5,18 +5,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BullyingPageRoutingModule } from './bullying-routing.module';
+import { CyberbullyingPageRoutingModule } from './cyberbullying-routing.module';
 
-import { BullyingPage } from './bullying.page';
+import { CyberbullyingPage } from './cyberbullying.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BullyingPageRoutingModule,
+    CyberbullyingPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [BullyingPage]
+  declarations: [CyberbullyingPage]
 })
-export class BullyingPageModule {}
+export class CyberbullyingPageModule {}
