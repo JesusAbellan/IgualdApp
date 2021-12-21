@@ -1,6 +1,6 @@
 <ion-content id ="main">
-  <ion-card *ngFor="let card of cards" [routerLink]='card.ruta'>
-    <ion-card-header>
+  <ion-card *ngFor="let card of cards" [routerLink]='card.ruta' color="tertiary">
+    <ion-card-header color="success">
       <ion-card-title>{{card.titulo}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>

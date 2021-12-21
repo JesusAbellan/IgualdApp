@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Card } from 'src/app/interfaces/card';
 import { CardsService } from 'src/app/services/cards.service';

@@ -12,7 +12,6 @@ export class CardsService {
   getCards() {
     return new Promise<Card[]>((resolve, reject) => {
       const url = '../../assets/cards.json';
-      let cards: Card[] = [];
       this._http.get<Card[]>(url).subscribe(cards=>{
         resolve(cards);
       }, err=>{
@@ -25,7 +24,6 @@ export class CardsService {
   getSpecifiCard(index:number){
     return new Promise<Card[]>((resolve, reject) => {
       const url = '../../assets/cards.json';
-      let cards: Card[] = [];
       this._http.get<Card[]>(url).subscribe(cards=>{
         resolve(cards);
       }, err=>{
