@@ -5,6 +5,8 @@
 :root {
 
   --ion-background-color: #e4def9;
+  --ion-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
   /** primary **/
   --ion-color-primary: #605399;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -62,7 +64,7 @@
   --ion-color-dark-tint: #383a3e;
 
   /** medium **/
-  --ion-color-medium: #92949c;
+  --ion-color-medium: linear-gradient(#102444, #C0BBDE);;
   --ion-color-medium-rgb: 146, 148, 156;
   --ion-color-medium-contrast: #ffffff;
   --ion-color-medium-contrast-rgb: 255, 255, 255;

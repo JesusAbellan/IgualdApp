@@ -25,3 +25,25 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+ion-title.title-large {
+  color: rgb(247, 241, 247);
+  font-size: 1.6em;
+}
+
+ion-card {
+  box-shadow: 5px 5px 5px grey;
+}
+
+ion-card-header{
+   text-align: center; 
+  }
+
+ion-card-content{
+   text-align: justify;
+   color: #102444;
+  }
+  
+ion-img{
+    margin: 5px;
+    border: 2px solid gray;
+  }
