@@ -19,7 +19,6 @@ export class CabeceraComponent implements OnInit {
   async ngOnInit() {
     try{
       this.items = await this._itemsService.getItems();
-      console.log(this.items);
     }catch(error){
       console.log(error);
        }

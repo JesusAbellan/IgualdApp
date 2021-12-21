@@ -18,7 +18,7 @@
       </ion-slides>
     </ion-col>
       <ion-col size="12">
-        <ion-list>
+        <ion-list *ngIf="(card?.enlaces != null)">
           <ion-list-header color="secondary">
             <ion-label>Enlaces de Interés</ion-label>
           </ion-list-header>
@@ -28,7 +28,7 @@
         </ion-list>
       </ion-col>
       <ion-col size="12">
-        <ion-list>
+        <ion-list *ngIf="(card?.videos != null)">
           <ion-list-header color="secondary">
             <ion-label>Vídeos de Interés</ion-label>
           </ion-list-header>
