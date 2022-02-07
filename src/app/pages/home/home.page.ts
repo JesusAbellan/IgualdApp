@@ -18,7 +18,7 @@ export class HomePage implements OnInit{
     try {
       this.cards = (await this._cardsService.getCards());
       } catch (error) {
-      console.log(error);
+        console.log(error);
     }
   }
 

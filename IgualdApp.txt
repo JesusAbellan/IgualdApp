@@ -1,0 +1,2 @@
+repositorio git para ver ramas y commits: https://github.com/JesusAbellan/IgualdApp
+tablero trello para ver tareas asignadas y realizadas: https://trello.com/b/C7iEl5IW/cliente (en el caso que no deje verlo, pedir permisos a Jesús Abellán)
