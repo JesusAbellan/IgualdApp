@@ -1,5 +1,6 @@
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private _usuarioService: UsuarioService) { }
+  constructor(private _usuarioService: UsuarioService, private _router:Router) { }
   public usuario = {
     email:'',
     pwd:''
@@ -18,9 +19,12 @@ export class LoginPage implements OnInit {
   async login() {
     const respuesta = await this._usuarioService.login(this.usuario);
     if(respuesta.status=='ok'){
-      console.log('usuario logado')
+      console.log('usuario logado');
+      this._router.navigate(['logado']);
+      
     } else{
       console.log(respuesta.mensaje);
+      alert('Error en el login');
     }
   }
 
