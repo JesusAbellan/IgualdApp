@@ -7,12 +7,12 @@
   </div>
   <form id="form">
     <ion-item class="ion-margin-bottom">
-      <ion-input type="email" placeholder="Correo"></ion-input>
+      <ion-input type="email" placeholder="Correo" [(ngModel)]="usuario.email"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input type="password" placeholder="Contraseña"></ion-input>
+      <ion-input type="password" placeholder="Contraseña" [(ngModel)]="usuario.pwd"></ion-input>
     </ion-item>
-    <ion-button type="submit" expand="block" shape="round">
+    <ion-button type="submit" expand="block" shape="round" (click)="login()" [disabled]="!esValido()">
       Iniciar Sesión
     </ion-button>
     <div>
