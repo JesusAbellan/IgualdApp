@@ -68,10 +68,6 @@ export class RegistroPage implements OnInit {
     } 
 
     return true;
-   //el problema es que el valor de los campos se rellena automáticamente
-    //con el maravilloso [(ngModel)],por eso  el mensaje de error se ve desde el principio,
-    //y solo se quita cuando los inputs están bien
-    //te dejo el marrón, Jesús ^_^
   }
 
 }
