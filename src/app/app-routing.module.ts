@@ -5,12 +5,16 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'logado',
     pathMatch: 'full'
   },
   {
+    path: 'logado',
+    loadChildren: () => import('./pages/logado/logado.module').then( m => m.LogadoPageModule),
+    canActivate:[EstaLogadoGuard]
+  },
+  {
     path: 'home',
-    canActivate: [EstaLogadoGuard],
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
@@ -48,7 +52,8 @@ const routes: Routes = [
   {
     path: 'creditos',
     loadChildren: () => import('./pages/creditos/creditos.module').then( m => m.CreditosPageModule)
-  }
+  },
+
 ];
 
 @NgModule({

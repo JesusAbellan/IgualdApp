@@ -5,7 +5,7 @@ import { UsuarioService } from '../services/usuario.service';
 
 @Injectable({
   providedIn: 'root'
-})
+}) 
 export class EstaLogadoGuard implements CanActivate {
   constructor(private _usuarioService:UsuarioService){}
 
