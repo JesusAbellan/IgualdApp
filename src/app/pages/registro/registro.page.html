@@ -2,26 +2,30 @@
   <div id="header">
     <h1>Crea tu Cuenta</h1>
   </div>
-  <form id="form">
     <ion-item class="ion-margin-bottom">
-      <ion-input type="text" placeholder="Nombre"></ion-input>
+      <ion-input type="text" placeholder="Nombre" [(ngModel)]="usuario.nombre" required></ion-input>
     </ion-item>
     <ion-item class="ion-margin-bottom">
-      <ion-input type="email" placeholder="Correo"></ion-input>
+      <ion-input type="text" placeholder="Apellidos" [(ngModel)]="usuario.apellidos" required></ion-input>
     </ion-item>
     <ion-item class="ion-margin-bottom">
-      <ion-input type="password" placeholder="Contraseña"></ion-input>
+      <ion-input type="email" placeholder="Correo" [(ngModel)]="usuario.email" required></ion-input>
     </ion-item>
     <ion-item class="ion-margin-bottom">
-      <ion-input type="password" placeholder="Confirme su Contraseña"></ion-input>
+      <ion-input type="password" placeholder="Contraseña" [(ngModel)]="usuario.pwd" required></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin-bottom">
+      <ion-input type="password" placeholder="Confirme su Contraseña" [(ngModel)]="pwd2" required></ion-input>
     </ion-item>
     <ion-item class="ion-margin-bottom">
       <ion-select placeholder="Selecciona tu Centro" interface="popover">
         <ion-select-option *ngFor="let item of centros" [value]="item.nombre">{{item.nombre}}</ion-select-option>
       </ion-select>
     </ion-item>
-    <ion-button expand="block" shape="round">
+    <ion-item style="color: brown;">
+      <ion-label *ngIf="cadenaError!=''">{{cadenaError}}</ion-label>
+    </ion-item>
+    <ion-button expand="block" shape="round" (click)="register()" [disabled]="!esValido()">
       Continuar
     </ion-button>
-  </form>
 </ion-content>
